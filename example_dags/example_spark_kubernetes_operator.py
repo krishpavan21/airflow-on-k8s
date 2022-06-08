@@ -66,7 +66,7 @@ dag = DAG(
 
 submit = SparkKubernetesOperator(
     task_id='spark_pi_submit',
-    namespace="sampletenant",
+    namespace="testproject3",
     application_file="example_spark_kubernetes_operator_pi.yaml",
     kubernetes_conn_id="kubernetes_in_cluster",
     do_xcom_push=True,
