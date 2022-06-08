@@ -86,7 +86,7 @@ try:
                             ),
                             k8s.V1Container(
                                 name="sidecar",
-                                image="ci-gl-mgmt-pulp-vm1.glhc-hpe.local/busybox:latest",
+                                image="gl-mgmt-pulp-vm1.gl-hpe.net/busybox:latest",
                                 resources=resources,
                                 command=["cat"],
                                 args=["/foo/mydata.txt"],
