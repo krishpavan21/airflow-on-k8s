@@ -49,7 +49,7 @@ try:
                             ),
                             k8s.V1Container(
                                 name="sidecar",
-                                image="ci-gl-mgmt-pulp-vm1.glhc-hpe.local/busybox:latest",
+                                image="gl-mgmt-pulp-vm1.gl-hpe.net/busybox:latest",
                                 resources=resources,
                                 command=["sh", "-cx"],
                                 args=["echo 'This is a text written by write pod' > /mydrive/mydata.txt"],
